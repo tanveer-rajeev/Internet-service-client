@@ -15,7 +15,7 @@ const customStyles = {
 
 Modal.setAppElement('#root')
 
-const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
+const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn }) => {
 
     const [data,setData] = useState(null);
     const { register, handleSubmit, errors } = useForm();
@@ -27,7 +27,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
     const handlePaymentSuccess =(paymentId,setSubmitPayment)=>{
         console.log("store database")
         data.service = appointmentOn;
-        data.date = date;
+        // data.date = date;
         data.created = new Date();
         data.paymentId = paymentId;
         fetch('http://localhost:5000/addAppointment', {
@@ -57,7 +57,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
                     contentLabel="Example Modal"
                 >
                     <h2 className="text-center text-brand">{appointmentOn}</h2>
-                    <p className="text-secondary text-center"><small>ON {date.toDateString()}</small></p>
+                    {/*<p className="text-secondary text-center"><small>ON {date.toDateString()}</small></p>*/}
                     <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
                         <div className="form-group">
                             <input type="text" ref={register({required: true})} name="name" placeholder="Your Name"

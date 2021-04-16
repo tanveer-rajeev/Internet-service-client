@@ -11,10 +11,10 @@ const Appointment = () => {
     }
     return (
         <div>
-            <Navbar></Navbar>
-            <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
-            <BookAppointment date={selectedDate}></BookAppointment>
-            <Footer></Footer>
+            <Navbar/>
+            <AppointmentHeader handleDateChange={handleDateChange}/>
+            <BookAppointment date={selectedDate}/>
+            <Footer/>
         </div>
     );
 };

@@ -55,6 +55,16 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/addService" className="text-white" >
+                            <FontAwesomeIcon icon={faCog} /> <span>Add service</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/getServices" className="text-white" >
+                            <FontAwesomeIcon icon={faCog} /> <span>Services</span>
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/admin/setting" className="text-white" >
                             <FontAwesomeIcon icon={faCog} /> <span>Settings</span>
                         </Link>

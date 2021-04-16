@@ -1,11 +1,7 @@
 
 import fluoride from '../../../images/fluoride.png';
-import cavity from '../../../images/cavity.png';
-import whitening from '../../../images/whitening.png';
-import React, { useContext } from 'react';
-import { useHistory } from 'react-router';
-import { UserContext } from '../../../App';
-import ServiceDetail from '../ServiceDetail/ServiceDetail';
+import React from 'react';
+import ServiceDetail from './ServiceDetail';
 
 const serviceData = [
     {
@@ -41,7 +37,7 @@ const Services = () => {
             <div className="d-flex justify-content-center">
             <div className="w-75 row mt-5 pt-5">
                 {
-                    serviceData.map(service => <ServiceDetail service={service} key={service.name}></ServiceDetail>)
+                    serviceData.map(service => <ServiceDetail service={service} key={service.name}/>)
                 }
             </div>
         </div>

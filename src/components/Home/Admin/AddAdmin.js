@@ -37,9 +37,9 @@ const AddAdmin = () => {
 
     return (
         <section className="container-fluid row">
-            <Sidebar></Sidebar>
+            <Sidebar/>
             <div className="col-md-10 p-4 pr-5" style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}>
-                <h5 className="text-brand">Add a Doctor</h5>
+                <h5 className="text-brand">Add admin</h5>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>

@@ -6,10 +6,10 @@ import Appointment from './components/Appointment/Appointment/Appointment';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import Login from './components/Login/Login/Login';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
-import AllPatients from './components/AllPatients/AllPatients/AllPatients';
+import Users from './components/Users/Users';
 import AddAdmin from './components/Home/Admin/AddAdmin';
-import ServiceDetail from './components/Home/ServiceDetail/ServiceDetail';
-import Services from './components/Home/Services/Services';
+import ServiceController from "./components/Dashboard/ServiceController/ServiceController";
+import ManageService from "./components/Dashboard/ServiceController/ManageService";
 
 export const UserContext = createContext();
 
@@ -26,9 +26,14 @@ function App() {
             <Dashboard/>
           </PrivateRoute>
           <PrivateRoute path="/allPatients">
-            <AllPatients/>
+            <Users/>
           </PrivateRoute>
-          
+          <Route path="/addService">
+            <ServiceController/>
+          </Route>
+          <Route path="/getServices">
+            <ManageService/>
+          </Route>
           <Route path="/addAdmin">
             <AddAdmin/>
           </Route>
