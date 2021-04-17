@@ -15,9 +15,10 @@ const AddAdmin = () => {
         setFile(newFile);
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         const formData = new FormData()
         console.log(adminInfo);
+        e.preventDefault();
         formData.append('file', file);
         formData.append('name', adminInfo.name);
         formData.append('email', adminInfo.email);

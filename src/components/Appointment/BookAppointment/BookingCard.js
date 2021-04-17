@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AppointmentForm from '../AppointmentForm/AppointmentForm';
+import AppointmentForm from '../AppointmentForm';
 
 const BookingCard = ({ service}) => {
     const [modalIsOpen,setIsOpen] = useState(false);

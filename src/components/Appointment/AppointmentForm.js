@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { useForm } from "react-hook-form";
-import ProccessPayment from "../../ProccessPayment/ProccessPayment"
+import ProccessPayment from "../ProccessPayment/ProccessPayment"
 const customStyles = {
     content: {
         top: '50%',

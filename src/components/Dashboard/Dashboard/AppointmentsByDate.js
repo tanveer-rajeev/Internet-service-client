@@ -1,14 +1,14 @@
 import React from 'react';
-import AppointmentShortList from '../AppointmentShortList/AppointmentShortList';
+import AppointmentShortList from './AppointmentShortList';
 
 const AppointmentsByDate = ({ appointments }) => {
-    console.log(appointments);
+    console.log(appointments.length);
     return (
         <div>
             <h2 className="text-brand text-center">Appointments</h2>
             {
                 appointments.length ?
-                 <AppointmentShortList appointments={appointments} ></AppointmentShortList>
+                 <AppointmentShortList appointments={appointments} />
                 :
                 <div className="p-5">
                     <h4 className="lead text-center">No Appointments for this Date</h4>

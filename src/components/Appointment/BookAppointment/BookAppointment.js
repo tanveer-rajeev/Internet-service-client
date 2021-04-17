@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import BookingCard from '../BookingCard/BookingCard';
+import BookingCard from './BookingCard';
 
 const BookAppointment = ({date}) => {
     const [services,setServices] = useState([]);

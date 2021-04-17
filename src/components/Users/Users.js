@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import AppointmentDataTable from '../Dashboard/AppointmentDataTable/AppointmentDataTable';
+import AppointmentDataTable from '../Dashboard/Dashboard/AppointmentDataTable';
 import Sidebar from '../Dashboard/Sidebar/Sidebar';
 
 const Users = () => {
