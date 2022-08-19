@@ -31,6 +31,6 @@
 
 <hr/>
 
-**[Internet Service Provider backend server repository](https://github.com/ToufiqurRahmanTamkin/internet-service-provider-server)**
+**[Internet Service Provider backend server repository](https://github.com/tanveer-rajeev/Internet-service-server)**
 
 <hr/>
